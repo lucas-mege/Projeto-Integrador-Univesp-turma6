@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Atividade</title>
+    <link rel="stylesheet" href="estyle_form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro de Atividade</h2>
+        <form action="#">
+            <label for="atividade">Atividade:</label>
+            <input type="text" id="atividade" name="atividade" required>
+
+            <label for="oficineiro">Oficineiro:</label>
+            <input type="text" id="oficineiro" name="oficineiro" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="local">Local:</label>
+            <input type="text" id="local" name="local" required>
+
+            <label for="qtd_pessoas">Quantidade de Pessoas:</label>
+            <input type="number" id="qtd_pessoas" name="qtd_pessoas" required>
+
+            <label for="relato">Breve Relato:</label>
+            <textarea id="relato" name="relato" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div id="obrigado" style="display: none;">
+        <h3>Obrigado por enviar o formulário!</h3>
+        <p>Sua participação é muito importante para nós.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
